@@ -5496,7 +5496,7 @@ let is_readable class_def field =
    (match field.cf_kind with
    | Var { v_read = AccNever } when not (is_physical_field field) -> false
    | Var { v_read = AccInline } -> false
-   | Var _ when is_abstract_impl class_def -> false
+   (* | Var _ when is_abstract_impl class_def -> false *)
    | _ -> true)
 ;;
 
