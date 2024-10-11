@@ -31,7 +31,7 @@ let version = 4306
 let version_major = version / 1000
 let version_minor = (version mod 1000) / 100
 let version_revision = (version mod 100)
-let version_pre = None
+let version_pre = Some "cat.is_readable"
 
 let null_pos = { pfile = "?"; pmin = -1; pmax = -1 }
 
